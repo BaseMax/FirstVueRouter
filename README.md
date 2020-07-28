@@ -4,7 +4,7 @@ Some sample codes for using VueJs + vue-router in webpage just for fun.
 
 Good example for starter and learning **Vue Js** easily and fastly. (Just in 10 minutes)
 
-![First Vue-Router](demo.jpg)
+[![First Vue-Router](demo.jpg)](https://github.com/BaseMax/FirstVueRouter/blob/master/asset/script.js)
 
 ### VueRouter
 
