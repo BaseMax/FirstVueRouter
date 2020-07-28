@@ -84,6 +84,22 @@ Read more: https://router.vuejs.org/guide/essentials/history-mode.html#example-s
 
 Read more: https://router.vuejs.org/installation.html
 
+### Why Vue Router HTML5 History Mode?
+
+**HTML5 History Mode**
+
+```
+const router = new VueRouter({
+  mode: 'history',
+  routes: routes,
+})
+```
+
+Read more:
+
+- https://forum.vuejs.org/t/why-vue-router-html5-history-mode/82767/3
+- https://router.vuejs.org/guide/essentials/history-mode.html
+
 ### Related Repositories
 
 https://github.com/BaseMax/FirstVuejs
