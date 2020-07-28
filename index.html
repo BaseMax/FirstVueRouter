@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Max Base</title>
+    <script type="text/javascript" src="/asset/vue.js"></script>
+    <script type="text/javascript" src="/asset/vue-router.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <hr>
+      <b>Open source at: <a href="https://github.com/BaseMax/FirstVueRouter">https://github.com/BaseMax/FirstVueRouter</a></b>
+    </div>
 
+
+    <template id="error-page">
+      <h1>Error page!</h1>
+    </template>
+
+    <template id="category-page">
+      <h1>Category page</h1>
+    </template>
+
+    <template id="search-page">
+      <h1>Search page</h1>
+    </template>
+
+    <template id="application-page">
+      <h1>Application page</h1>
+    </template>
+
+    <template id="home-page">
+      <h1>Home page {{lang}}</h1>
+    </template>
+
+    <script type="text/javascript">
+    const HomePage = {
+      template: '#home-page',
+      data: function() {
+        return {
+          lang:this.$route.params.lang ? this.$route.params.lang : 'en',
+        };
+      },
+    }
+
+    const CategoryPage = {
+      template: '#category-page',
+    }
+
+    const SearchPage = {
+      template: '#search-page',
+    }
+
+    const ApplicationPage = {
+      template: '#application-page',
+    }
+
+    const NotFoundComponent = {
+      template: '#error-page',
+    }
+
+    const routes = [
+      { path: '/:lang?', component: HomePage },
+      { path: '/:lang/search', component: SearchPage },
+      { path: '/:lang/:cat', component: CategoryPage },
+      { path: '/:lang/:cat/:app', component: ApplicationPage },
+      { path: '/:lang/*', component: NotFoundComponent },
+      { path: '*', component: NotFoundComponent }
+    ]
+
+    const router = new VueRouter({
+      mode: 'history',
+      routes: routes,
+    })
+
+    const app = new Vue({
+      el: '#app',
+      router: router,
+      mounted: function() {
+        // console.log(this.$router.currentRoute);
+      },
+    });
+    </script>
+  </body>
+</html>
