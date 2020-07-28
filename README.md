@@ -4,6 +4,8 @@ Some sample codes for using VueJs + vue-router in webpage just for fun.
 
 Good example for starter and learning **Vue Js** easily and fastly. (Just in 10 minutes)
 
+![First Vue-Router](demo.jpg)
+
 ### VueRouter
 
 One example:
