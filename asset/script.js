@@ -1,7 +1,7 @@
 /*
  * @Name: First Vue-Router
  * @Author: Max Base
- * @Repository: https://github.com/BaseMax/FirstVueRouter/new/master
+ * @Repository: https://github.com/BaseMax/FirstVueRouter
  * @Date: 2020-07-27
 */
 const HomePage = {
