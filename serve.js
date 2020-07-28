@@ -9,7 +9,6 @@ const app = express();
 
 app.use("/asset", express.static(__dirname + "/asset"));
 app.use(function(req, res, next) {
-    // res.sendFile('/home/max/Desktop/FirstVueRouter/index.html');
-    res.sendFile('index.html'); // Change Path
+    res.sendFile(__dirname+'/index.html');
 });
 app.listen(8282, () => console.log('App listening on port 8282!'));
