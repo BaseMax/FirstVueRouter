@@ -77,7 +77,7 @@ Read more: https://router.vuejs.org/guide/essentials/history-mode.html#example-s
 
 Read more: https://router.vuejs.org/installation.html
 
-### Similar Repositories
+### Related Repositories
 
 https://github.com/BaseMax/FirstVuejs
 
