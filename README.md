@@ -2,6 +2,13 @@
 
 Some sample codes for using VueJs + vue-router in webpage just for fun.
 
+### Using
+
+```
+$ node serve.js
+```
+And open `http://localhost:8282/` in the Browser.
+
 ### Similar Repositories
 
 https://github.com/BaseMax/FirstVuejs
