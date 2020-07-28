@@ -21,7 +21,7 @@ const routes = [
 
 **The following url will be identified:**
 
-- `/``
+- `/`
 - `/en/`
 - `/ar/`
 - `/de/`
