@@ -8,6 +8,15 @@ Good example for starter and learning **Vue Js** easily and fastly. (Just in 10 
 
 ### VueRouter
 
+#### router-link
+
+`<router-link>` is a replacement for `<A>` tag.
+
+Example:
+```
+<router-link to="/your_link_at_here">Label</router-link>
+```
+
 One example:
 
 ```
