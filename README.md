@@ -6,6 +6,8 @@ Good example for starter and learning **Vue Js** easily and fastly.
 
 ### VueRouter
 
+One example:
+
 ```
 const routes = [
   { path: '/:lang?', component: HomePage },
@@ -16,6 +18,20 @@ const routes = [
   { path: '*', component: NotFoundComponent }
 ]
 ```
+
+**The following url will be identified:**
+
+- `/``
+- `/en/`
+- `/ar/`
+- `/de/`
+- `/fr/`
+- `/en/category_name/`
+- `/ar/sample_name-testing/`
+- `/en/war/name_of_application_or-game/`
+- `/en/search/`
+- `/dfg/dfg/dfg/dfg/dfg/dfg/df/gd/fgdf/g`
+- Others will be 404 error...
 
 https://github.com/BaseMax/FirstVueRouter/blob/master/asset/script.js
 
