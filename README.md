@@ -19,13 +19,38 @@ const routes = [
 
 https://github.com/BaseMax/FirstVueRouter/blob/master/asset/script.js
 
-### Using
+### Run and serve
+
+#### Run using NodeJs
 
 ```
 $ node serve.js
 ```
 
 And open `http://localhost:8282/` in the Browser.
+
+#### Run using Nginx
+
+```
+location / {
+  try_files $uri $uri/ /index.html;
+}
+```
+
+#### Run using Apache
+
+```
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+```
+
+Read more: https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations
 
 ### Similar Repositories
 
