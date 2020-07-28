@@ -3,16 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Max Base</title>
+    <title>FirstVueRouter - Max Base</title>
     <script type="text/javascript" src="/asset/vue.js"></script>
     <script type="text/javascript" src="/asset/vue-router.js"></script>
   </head>
   <body>
+
     <div id="app">
+      <router-link to="/">/ (Home)</router-link>
+      <router-link to="/ar">/ar (Arabic)</router-link>
+      <router-link to="/sw">/sw (Sweden)</router-link>
+      <router-link to="/de">de (German)</router-link>
+      <router-link to="/fr">/fr (French)</router-link>
+      <router-link to="/en/war">/en/war (War category)</router-link>
+      <router-link to="/en/war/org.max.base">/en/war/org.max.base (App)</router-link>
+      <router-link to="/123/456/789/123/456/789">/404 (Bad link)</router-link>
+      <router-view :key="$route.fullPath"></router-view>
       <hr>
       <b>Open source at: <a href="https://github.com/BaseMax/FirstVueRouter">https://github.com/BaseMax/FirstVueRouter</a></b>
     </div>
-
 
     <template id="error-page">
       <h1>Error page!</h1>
@@ -34,53 +43,6 @@
       <h1>Home page {{lang}}</h1>
     </template>
 
-    <script type="text/javascript">
-    const HomePage = {
-      template: '#home-page',
-      data: function() {
-        return {
-          lang:this.$route.params.lang ? this.$route.params.lang : 'en',
-        };
-      },
-    }
-
-    const CategoryPage = {
-      template: '#category-page',
-    }
-
-    const SearchPage = {
-      template: '#search-page',
-    }
-
-    const ApplicationPage = {
-      template: '#application-page',
-    }
-
-    const NotFoundComponent = {
-      template: '#error-page',
-    }
-
-    const routes = [
-      { path: '/:lang?', component: HomePage },
-      { path: '/:lang/search', component: SearchPage },
-      { path: '/:lang/:cat', component: CategoryPage },
-      { path: '/:lang/:cat/:app', component: ApplicationPage },
-      { path: '/:lang/*', component: NotFoundComponent },
-      { path: '*', component: NotFoundComponent }
-    ]
-
-    const router = new VueRouter({
-      mode: 'history',
-      routes: routes,
-    })
-
-    const app = new Vue({
-      el: '#app',
-      router: router,
-      mounted: function() {
-        // console.log(this.$router.currentRoute);
-      },
-    });
-    </script>
+    <script type="text/javascript" src="/script.js"></script>
   </body>
 </html>
