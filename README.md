@@ -1,6 +1,6 @@
 # First Vue-Router
 
-Some sample codes for using VueJs + vue-router in webpage just for fun.
+Sample web page using **vuejs + vue-router** just for fun.
 
 Good example for starter and learning **Vue Js** easily and fastly. (Just in 10 minutes)
 
