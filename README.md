@@ -72,8 +72,15 @@ Read more: https://router.vuejs.org/guide/essentials/history-mode.html#example-s
 
 ### CDN for VueJS
 
-- Vue-Router: https://cdnjs.com/libraries/vue-router
-- VueJs: https://cdnjs.com/libraries/vue
+**VueJs:**
+
+- https://cdnjs.com/libraries/vue
+- https://www.jsdelivr.com/package/npm/vue
+
+**Vue-Router:**
+
+- https://cdnjs.com/libraries/vue-router
+- https://www.jsdelivr.com/package/npm/vue-router
 
 Read more: https://router.vuejs.org/installation.html
 
