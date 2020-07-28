@@ -68,6 +68,13 @@ location / {
 
 Read more: https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations
 
+### CDN for VueJS
+
+- Vue-Router: https://cdnjs.com/libraries/vue-router
+- VueJs: https://cdnjs.com/libraries/vue
+
+Read more: https://router.vuejs.org/installation.html
+
 ### Similar Repositories
 
 https://github.com/BaseMax/FirstVuejs
